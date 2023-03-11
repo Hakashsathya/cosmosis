@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Press+Start+2P&family=Sanchez&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!--------------------- PRE-LOADER ---------------------->
+    <div class="pre_loder" id="pre_loder">
+        <div class="loder_container">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <span>Loading...</span>
+        </div>
+    </div>
+
+    <!--------------------- RIEGISTER ---------------------->
+    <section class="pannel_bg">
+        <div class="pannel_container signup">
+            <span class="borderLine"></span>
+            <form class="form">
+                <h2>Sign up</h2>
+                <div class="inputBox">
+                    <input type="email" id="email" name="email" autocomplete="off" required>
+                    <span>User Email</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="text" id="username" name="username" autocomplete="off" required>
+                    <span>Username</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="date" id="dateOfBirth" name="dateOfBirth" autocomplete="off" required>
+                    <span>Date Of Birth</span>
+                    <i></i> 
+                </div>
+                <div class="inputBox">
+                    <input type="number" id="age" name="age" autocomplete="off" required>
+                    <span>Age</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="number" id="contact" name="contact" maxlength="10" autocomplete="off" required>
+                    <span>Contact Number</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" id="password" name="password" maxlength="12" autocomplete="off" required>
+                    <span>Password</span>
+                    <i></i>
+                </div>
+                <input type="submit" value="SignUp" id="signup">
+            </div>
+        </div>
+    </section>
+    
+    <!----------------------JS------------------------------>
+    <script src="/js/register.js"></script>
+
+</body>
+</html>

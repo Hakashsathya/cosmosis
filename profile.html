@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Press+Start+2P&family=Sanchez&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!--------------------- PRE-LOADER ---------------------->
+    <div class="pre_loder" id="pre_loder">
+        <div class="loder_container">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <span>Loading...</span>
+        </div>
+    </div>
+
+    <!--------------------- PROFILE PAGE ---------------------->
+    <section class="profile">
+        <div class="profile_constainer">
+            <div class="head">
+                <h2>welcome, <span id="head_name">Hakash</span>.</h2>
+            </div>
+            <div class="user_details">
+                <div class="user_email individuals">
+                    <label>User Email :</label>
+                    <h3 id="email"></h3>
+                </div>
+                <div class="user_password individuals">
+                    <label>User Password :</label>
+                    <h3 id="password"></h3>
+                </div>
+                <div class="user_name individuals">
+                    <label>User Name :</label>
+                    <h3 id="username"></h3>
+                </div>
+                <div class="user_dob individuals">
+                    <label>Date Of Birth:</label>
+                    <h3 id="dateOfBirth"></h3>
+                </div>
+                <div class="user_age individuals">
+                    <label>User Age :</label>
+                    <h3 id="age"></h3>
+                </div>
+                <div class="user_email individuals">
+                    <label>User Contact :</label>
+                    <h3 id="contact"></h3>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="edit_btn" id="edit_button">
+                    <button>
+                        Edit Profile
+                    </button>
+                </div>
+                <div class="log_out">
+                    <button id="logout_btn">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------POP UP FOR EDIT PROFILE------------------------------>
+
+    <section class="pop_pannel"><form method="POST">
+        <div class="pannel_holder">
+            <div class="edit_profile">
+                <div class="head">
+                    <h2>Edit Profile</h2>
+                </div>
+                <div class="close_pop">
+                    <i class="uil uil-multiply"></i>
+                </div>
+                <div class="contents">
+                    <div class="individual">
+                        <label>User Name :</label><br>
+                        <input type="text" id="edit_name" autocomplete="off" required>
+                    </div>
+                    <div class="individual">
+                        <label>Date Of Birth :</label><br>
+                        <input type="date" id="edit_dob" required>
+                    </div>
+                    <div class="individual">
+                        <label>User Age :</label><br>
+                        <input type="number" id="edit_age" autocomplete="off" required>
+                    </div>
+                    <div class="individual">
+                        <label>User Contact :</label><br>
+                        <input type="number" id="edit_contact" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="edit_btn">
+                    <button type="submit" id="save_changes">
+                        Save Changes
+                    </button>
+                </div>
+            </div>
+        </div></form>
+    </section>
+
+    <!----------------------JS------------------------------>
+    <script src="/js/profile.js"></script>
+
+</body>
+</html>

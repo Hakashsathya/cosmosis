@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Press+Start+2P&family=Sanchez&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!--------------------- PRE-LOADER ---------------------->
+    <div class="pre_loder" id="pre_loder">
+        <div class="loder_container">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <span>Loading...</span>
+        </div>
+    </div>
+
+    <!--------------------- LOGIN PAGE ---------------------->
+    <section class="pannel_bg">
+        <div class="pannel_container">
+            <span class="borderLine"></span>
+            <div class="form">
+                <h2>Sign in</h2>
+                <div class="inputBox">
+                    <input type="email" id="user_email" autocomplete="off" required>
+                    <span>User Email</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" id="user_password" autocomplete="off" required>
+                    <span>Password</span>
+                    <i></i>
+                </div>
+                <div class="message">
+                    <span id="message"></span>
+                </div>
+                <div class="links">
+                    <a href="#">Forget Password ?</a>
+                    <a href="register.html">Singup</a>
+                </div>
+                <input type="submit" id="login" value="Login">
+            </div>
+        </div>
+    </section>
+    
+    <!----------------------JS------------------------------>
+    <script src="/js/login.js"></script>
+
+</body>
+</html>
